@@ -2,6 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: rgb(51, 51, 51);
+.image-div {
+  height: 400px;
+  /* background-color: black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton {
+  background-color: red;
+  /* width: 100px; */
+  color: white;
+  padding: 8px 30px;
+}
+
+.mum {
+  cursor: pointer;
+  transition: width 0.3s ease;
+}
+
+.arrow {
+  display: none;
+  border: solid 1px orangered;
+}
+
+.mum:hover .arrow {
+  display: block;
+  color: brown;
 }
