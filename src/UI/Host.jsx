@@ -6,7 +6,10 @@ import temple from "../Images/temple.png";
 
 export default function Host() {
   return (
-    <div className="bg-secondary px-4 py-20 gap-y-32 flex flex-col justify-center items-center md:items-start md:flex-row flex-wrap md:justify-evenly lg:px-10 font-mont">
+    <div
+      id="location"
+      className="bg-secondary px-4 py-20 gap-y-32 flex flex-col justify-center items-center md:items-start md:flex-row flex-wrap md:justify-evenly lg:px-10 font-mont"
+    >
       <div className="flex flex-col text-center gap-y-3 w-80 h-auto">
         <img src={Noah} alt="" className="w-fit" />
         <p className="text-lg font-semibold">Noah's Court</p>

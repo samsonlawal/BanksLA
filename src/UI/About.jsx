@@ -21,7 +21,10 @@ export default function About() {
   //   });
 
   return (
-    <div className="px-4 md:px-12 py-20 bg-white flex flex-col justify-center lg:justify-evenly item-center lg:flex-row lg:h-screen lg:py-10 lg:px-10 xl:px-20 gap-y-10">
+    <div
+      id="about"
+      className="px-4 md:px-12 py-20 bg-white flex flex-col justify-center lg:justify-evenly item-center lg:flex-row lg:h-screen lg:py-10 lg:px-10 xl:px-20 gap-y-10"
+    >
       {/* image area */}
       <div className="lg:w-1/2 flex justify-center items-center">
         <img src={about} alt="" className="lg:w-10/12 h-fit xl:w-128" />

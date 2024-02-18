@@ -19,15 +19,61 @@ import Footer from "./UI/Footer";
 function App() {
   const slides = [c1, c2, c3];
 
-  const reviewData = {
-    c1: {
+  const reviewData = [
+    {
+      id: "c1",
       name: "Nwabu Obinna",
       review:
         "A great place to call home. The entire staff always greet you with a smile and are very helpful to our needs, and are quick to attend to any problems that arise . The grounds and facilities are kept clean every day by friendly courteous workers.",
       image: "",
       property: "Noah's Court, Lekki",
     },
-  };
+
+    {
+      id: "c2",
+      name: "Samson Lawal",
+      review:
+        "A great place to call home. The entire staff always greet you with a smile and are very helpful to our needs, and are quick to attend to any problems that arise . The grounds and facilities are kept clean every day by friendly courteous workers.",
+      image: "",
+      property: "Noah's Court, Lekki",
+    },
+
+    {
+      id: "c3",
+      name: "Deji Omoregie",
+      review:
+        "A great place to call home. The entire staff always greet you with a smile and are very helpful to our needs, and are quick to attend to any problems that arise . The grounds and facilities are kept clean every day by friendly courteous workers.",
+      image: "",
+      property: "Noah's Court, Lekki",
+    },
+
+    {
+      id: "c3",
+      name: "Frank Gentle",
+      review:
+        "A great place to call home. The entire staff always greet you with a smile and are very helpful to our needs, and are quick to attend to any problems that arise . The grounds and facilities are kept clean every day by friendly courteous workers.",
+      image: "",
+      property: "Noah's Court, Lekki",
+    },
+
+    {
+      id: "c3",
+      name: "Destiny Kulture",
+      review:
+        "A great place to call home. The entire staff always greet you with a smile and are very helpful to our needs, and are quick to attend to any problems that arise . The grounds and facilities are kept clean every day by friendly courteous workers.",
+      image: "",
+      property: "Noah's Court, Lekki",
+    },
+
+    {
+      id: "c3",
+      name: "Audu Saheed",
+      review:
+        "A great place to call home. The entire staff always greet you with a smile and are very helpful to our needs, and are quick to attend to any problems that arise . The grounds and facilities are kept clean every day by friendly courteous workers.",
+      image: "",
+      property: "Noah's Court, Lekki",
+    },
+  ];
 
   const faqData = [
     {
@@ -89,11 +135,7 @@ function App() {
       <Booking />
       <Contacts />
       <Faq items={faqData} />
-      {/* <Review
-        slides={slides.map((s) => (
-          <img src={s} alt="" />
-        ))}
-      /> */}
+      <Review slides={reviewData} />
       <Download />
       <Footer />
     </>

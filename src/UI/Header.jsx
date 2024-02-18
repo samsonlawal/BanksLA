@@ -3,7 +3,10 @@ import { Zap } from "react-feather";
 
 export default function Header() {
   return (
-    <div className="w-full h-fit bg-white px-2 flex justify-center items-center md:px-4 xl:px-16 lg:pb-20">
+    <div
+      className="w-full h-fit bg-white px-2 flex justify-center items-center md:px-4 xl:px-16 lg:pb-20"
+      id="header"
+    >
       <div
         style={{ backgroundImage: `url(${hallway})` }}
         className="w-full h-full mb-10 fit flex flex-col bg-fit bg-no-repeat bg-right-top lg:bg-left-bottom justify-center items-center lg:w-full lg:px-10 lg:h-130 xl:h-128 md:h-150 relative lg:justify-cenetr lg:items-center"

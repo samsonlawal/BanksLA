@@ -6,7 +6,10 @@ import list3 from "../Images/list3.png";
 
 export default function List() {
   return (
-    <div className="bg-white py-28 px-4 gap-y-14 flex flex-col lg:flex-row justify-center lg:justify-evenly xl:justify-center items-center">
+    <div
+      id="list"
+      className="bg-white py-28 px-4 gap-y-14 flex flex-col lg:flex-row justify-center lg:justify-evenly xl:justify-center items-center"
+    >
       {/* <button className="boton">Apply Now</button>
       <div>
         <button></button>

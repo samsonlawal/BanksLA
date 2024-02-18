@@ -4,7 +4,10 @@ import { Zap, Shield, Watch } from "react-feather";
 
 export default function Contacts() {
   return (
-    <div className="w-full lg:h-fit bg-white px-4 py-20 lg:py-20 flex flex-col justify-center items-center lg:justify-evenly lg:flex-row">
+    <div
+      id="contact"
+      className="w-full lg:h-fit bg-white px-4 py-20 lg:py-20 flex flex-col justify-center items-center lg:justify-evenly lg:flex-row"
+    >
       {/* phone */}
       <div className="flex-col justify-center items-center gap-8 lg:w-128 hidden lg:flex pb-8 md:pb-0 font-mont">
         <div className="flex flex-row justify-center items-center gap-14">
@@ -63,14 +66,14 @@ export default function Contacts() {
       </div>
 
       {/* Text */}
-      <div className="w-full px-2 py-10 flex flex-col gap-y-4 lg:gap-y-4 justify-start items-start md:w-145 lg:w-1/2 lg:px-6">
+      <div className="w-full px-2 py-10 flex flex-col gap-y-4 lg:gap-y-2 justify-start items-start md:w-145 lg:w-1/2 lg:px-6">
         <h1 className="text-left font-bold text-3xl md:text-4xl lg:text-5xl font-mont">
           <span className="text-primary">Contactless</span> Check in
         </h1>
         <p className="text-left lg:text-lg font-open">
           No more check in hassles! Check in by yourself with your access code.
         </p>
-        <div className="w-fit flex flex-col justify-start items-start gap-y-4 md:text-lg py-6 lg:py-2 font-open">
+        <div className="w-fit flex flex-col justify-start items-start gap-y-4 md:text-lg py-6 lg:py-8 font-open">
           <div className="flex flex-row gap-x-4">
             <Zap className="text-primary" />
             <p className="font-semibold">Fast Check in</p>
