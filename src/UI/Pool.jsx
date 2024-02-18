@@ -1,4 +1,4 @@
-import pool from "../Images/Pool.png";
+import pool from "../Images/pool.png";
 import { Wifi } from "react-feather";
 import { Droplet } from "react-feather";
 import { Zap } from "react-feather";
