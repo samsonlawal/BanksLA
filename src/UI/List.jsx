@@ -1,4 +1,4 @@
-import { ArrowRight } from "react-feather";
+// import { ArrowRight } from "react-feather";
 import list1 from "../Images/list1.png";
 import list2 from "../Images/list2.png";
 import list3 from "../Images/list3.png";
