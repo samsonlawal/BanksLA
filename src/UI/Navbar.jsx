@@ -1,26 +1,22 @@
-import useState from "react";
+import { useState } from "react";
 import logo from "../Images/banks.png";
 import { Menu, X } from "react-feather";
 
 export default function Navbar() {
-  const hamburgeBtn = document.getElementById("ham");
-  const hamburgerX = document.getElementById("ex");
-  const mobileMenu = document.getElementById("mobile-menu");
-
-  const toggleMenu = () => {
-    mobileMenu.classList.toggle("hidden");
-    mobileMenu.classList.toggle("flex");
-  };
-
-  // const [isOpen, setIsOpen] = useState(false);
+  // const hamburgeBtn = document.getElementById("ham");
+  // const hamburgerX = document.getElementById("ex");
+  // const mobileMenu = document.getElementById("mobile-menu");
 
   // const toggleMenu = () => {
-
-  // ${
-  //         isOpen ? "flex" : "hidden"
-  //       }
-  //   setIsOpen(!isOpen);
+  //   mobileMenu.classList.toggle("hidden");
+  //   mobileMenu.classList.toggle("flex");
   // };
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  function toggleMenu() {
+    setIsOpen((prevstate) => !prevstate);
+  }
 
   // hamburgeBtn.addEventListener("click", toggleMenu);
   // mobileMenu.addEventListener("click", toggleMenu);
@@ -90,10 +86,12 @@ export default function Navbar() {
       {/* Mobile Menu */}
       <section
         id="mobile-menu"
-        className={`bg-white absolute top-20 z-20 px-6 w-full flex-col justify-center hidden items-center origin-top animate-open-menu font-medium  h-[calc(100%-80px)] py-4 text-lg font-mont lg:hidden`}
+        className={`bg-white absolute top-20 z-20 px-6 w-full flex-col justify-center items-center origin-top animate-open-menu font-medium h-[calc(100%-80px)] py-4 text-lg font-mont lg:hidden ${
+          isOpen ? "flex" : "hidden"
+        }`}
       >
         {/* links ad buttons */}
-        <div className="w-full h-fit flex flex-col items-center  space-y-8">
+        <div className="w-full h-fit flex flex-col items-center space-y-8">
           <ul className="flex flex-col justify-center items-center space-y-8">
             <li onClick={toggleMenu}>
               <a href="#header">Home</a>

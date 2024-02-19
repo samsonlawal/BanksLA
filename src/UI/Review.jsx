@@ -17,7 +17,7 @@ export default function Carousel({ slides }) {
 
   return (
     <div className="bg-white w-full h-fit px-4 py-28 flex flex-col justify-center items-center">
-      <div className="w-full lg:w-150 h-fit flex flex-col justify-center items-center text-center gap-y-2 mb-20 md:mb-0">
+      <div className="w-full lg:w-150 h-fit flex flex-col justify-center items-center text-center gap-y-2 mb-20 md:mb-10">
         <h1 className="font-open text-4xl xl:text-5xl font-bold">Review</h1>
         <p className="text-lg text-gray-400 font-mont">
           Know what our users are saying about their experience in our luxury
@@ -42,7 +42,7 @@ export default function Carousel({ slides }) {
                   <h1 className="font-mont pb-4">{review.review}</h1>
                 </div>
 
-                <div className="flex flex-col space-y-1 justify-start items-start font-mont bg-black text-white w-64 px-5 py-4">
+                <div className="flex flex-col space-y-1 justify-center items-center font-mont bg-black text-white w-64 px-5 py-4">
                   <p className="font-medium text-lg">{review.name}</p>
                   <div className="flex flex-row space-x-1 justify-center items-center text-sm text-gray-400">
                     <Home className="text-primary" size={16} />

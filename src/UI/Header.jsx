@@ -12,7 +12,7 @@ export default function Header() {
         className="w-full h-full mb-10 fit flex flex-col bg-fit bg-no-repeat bg-right-top lg:bg-left-bottom justify-center items-center lg:w-full lg:px-10 lg:h-130 xl:h-128 md:h-150 relative lg:justify-cenetr lg:items-center"
       >
         <div className="px-4 py-10 lg:py-6 flex flex-col justify-center items-center text-center w-full md:w-11/12 lg:w-150 xl:mb-30">
-          <h1 className="text-3xl md:text-4xl font-bold text-white pb-4 font-mont">
+          <h1 className="sm:font-mont text-3xl md:text-4xl font-bold text-white pb-4">
             Banks LA Serviced Luxury Apartments
           </h1>
           <p className="text-gray-300 text-lg font-open">
@@ -26,7 +26,7 @@ export default function Header() {
           {/* Form */}
           <div className="w-full text-center flex flex-col justify-center items-center md:items-start md:w-fit">
             <div className="flex flex-row gap-x-2 text-primary">
-              <h1 className="text-2xl font-bold text-primary mb-10 md:mb-6 font-mont text-start">
+              <h1 className="sm:font-mont text-2xl font-bold text-primary mb-10 md:mb-6 font-mont text-start">
                 Quick Booking
               </h1>
 

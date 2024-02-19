@@ -43,13 +43,14 @@ export default {
         150: "50rem",
         // ...
       },
+
+      fontFamily: {
+        mont: ["Montserrat", "sans-serif"],
+        open: ["Open Sans", "sans-serif"],
+        pop: ["Poppins", "sans-serif"],
+      },
     },
 
-    fontFamily: {
-      mont: ["Montserrat", "sans-serif"],
-      open: ["Open Sans", "sans-serif"],
-      pop: ["Poppins", "sans-serif"],
-    },
     plugins: [],
   },
 };
