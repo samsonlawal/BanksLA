@@ -15,8 +15,8 @@ export default function Download() {
         </div>
         {/* <p>samson</p> */}
       </div>
-      <div className="w-full px-4 md:px-20 md:py-20 py-4 md:w-140 lg:w-130 xl:w-140 lg:px-8 xl:px-14 lg:py-24 bg-secondary text-center md:text-left">
-        <h1 className="font-bold text-4xl lg:text-5xl font-mont">
+      <div className="w-full px-2 md:px-20 md:py-20 py-4 md:w-140 lg:w-130 xl:w-140 lg:px-8 xl:px-14 lg:py-24 bg-secondary text-center md:text-left">
+        <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl font-mont">
           Download our <span className="text-primary">App</span>
         </h1>
         <p className="pt-4 pb-2 lg:text-lg font-open">

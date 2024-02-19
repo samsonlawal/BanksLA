@@ -18,7 +18,7 @@ export default function Faq(props) {
 
   return (
     <div
-      className="bg-black h-fit w-full py-28 flex flex-col justify-center items-center px-6 md:px-20 lg:px-30"
+      className="bg-black h-fit w-full py-28 flex flex-col justify-center items-center px-4 md:px-20 lg:px-30"
       style={{ backgroundImage: `url(${pattern})` }}
     >
       <div className="w-full flex flex-col lg:flex-row lg:justify-between">

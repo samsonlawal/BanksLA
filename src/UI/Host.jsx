@@ -42,8 +42,8 @@ export default function Host() {
         </button>
       </div>
 
-      <div className="md:w-80 h-80 md:justify-center md:items-center mdflex flex-col">
-        <h1 className="text-3xl md:text-4xl font-bold pb-6 font-mont">
+      <div className="md:w-80 h-80 justify-center items-center flex flex-col">
+        <h1 className="text-4xl md:text-4xl font-bold pb-6 font-mont">
           The brand you can <span className="text-primary">trust.</span>
         </h1>
         <p className="font-open">

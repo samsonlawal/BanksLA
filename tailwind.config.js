@@ -19,12 +19,6 @@ export default {
       animation: {
         "open-menu": "open-menu 0.5s ease-in-out forwards",
       },
-      //       colors: {
-      //   lipstick: "#E33E3C",
-      //   lightlipstick: "#F8D1D0",
-      //   graylip: "#595959",
-      //   palelip: "#FDFFF6",
-      // },
 
       screens: {
         smd: "540px",
@@ -43,14 +37,13 @@ export default {
         150: "50rem",
         // ...
       },
-
-      fontFamily: {
-        mont: ["Montserrat", "sans-serif"],
-        open: ["Open Sans", "sans-serif"],
-        pop: ["Poppins", "sans-serif"],
-      },
     },
 
-    plugins: [],
+    fontFamily: {
+      mont: ["Montserrat", "sans-serif"],
+      open: ["Open Sans", "sans-serif"],
+      pop: ["Poppins", "sans-serif"],
+    },
   },
+  plugins: [],
 };

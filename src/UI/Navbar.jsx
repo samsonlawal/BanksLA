@@ -113,10 +113,9 @@ export default function Navbar() {
             <li className="border-2 border-black py-2 px-6">Sign Up</li>
             <button
               onClick={toggleMenu}
-              href="#location"
               className="px-8 y-4 text-primary bg-secondary py-2 hover:text-white hover:bg-primary"
             >
-              Locations
+              <a href="#location">Locations</a>
             </button>
           </ul>
         </div>

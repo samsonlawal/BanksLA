@@ -66,7 +66,7 @@ export default function Contacts() {
       </div>
 
       {/* Text */}
-      <div className="w-full px-2 py-10 flex flex-col gap-y-4 lg:gap-y-2 justify-start items-start md:w-145 lg:w-1/2 lg:px-6">
+      <div className="w-full md:px-2 py-10 flex flex-col gap-y-4 lg:gap-y-2 justify-start items-start md:w-145 lg:w-1/2 lg:px-6">
         <h1 className="text-left font-bold text-3xl md:text-4xl lg:text-5xl font-mont">
           <span className="text-primary">Contactless</span> Check in
         </h1>
