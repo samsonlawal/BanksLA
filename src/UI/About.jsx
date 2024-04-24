@@ -1,4 +1,5 @@
 import about from "../Images/hotelAbout.png";
+
 export default function About() {
   // const myPromise = new Promise((resolve, reject) => {
   //   // Asynchronous operation
@@ -33,7 +34,7 @@ export default function About() {
       {/* text area */}
       <div className="flex flex-col justify-center items-start space-y-4 text-left lg:w-1/2">
         <div className="flex flex-col justify-center items-start space-y-4  lg:w-full">
-          <h1 className="text-3xl md:text-3xl xl:text-4xl font-bold font-mont">
+          <h1 className="text-3xl md:text-3xl xl:text-4xl font-semibold font-mont">
             Enjoy the <span className="text-primary">luxury</span> experience at
             any of our locations.
           </h1>

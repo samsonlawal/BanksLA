@@ -16,7 +16,7 @@ export default function List() {
       </div> */}
 
       <div className="flex flex-col lg:w-96 xl:w-128 gap-y-4 lg:gap-y-8 justify-start text-left md:w-11/12">
-        <h2 className="text-3xl font-bold md:text-3xl xl:text-4xl font-mont">
+        <h2 className="text-3xl font-semibold md:text-3xl xl:text-4xl font-mont">
           List your <span className="text-primary">property</span>
         </h2>
         <p className="font-open">

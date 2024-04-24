@@ -4,6 +4,8 @@ import { Minus } from "react-feather";
 import { Plus } from "react-feather";
 import pattern from "../Images/pattern.png";
 
+import { RiQuestionnaireLine } from "react-icons/ri";
+
 export default function Faq(props) {
   const [selected, setSelected] = useState(null);
   const items = props.items;
@@ -22,12 +24,15 @@ export default function Faq(props) {
       style={{ backgroundImage: `url(${pattern})` }}
     >
       <div className="w-full flex flex-col lg:flex-row lg:justify-between">
-        <h1 className="text-white font-bold text-4xl text-center lg:w-120 lg:text-5xl lg:text-left font-mont">
+        <h1 className="text-white font-semibold text-4xl text-center lg:w-120 lg:text-5xl lg:text-left font-mont">
           Frequently Asked <span className="text-primary">Questions</span>
         </h1>
-        <p className="text-gray-300 text-lg text-center py-4 lg:w-96 lg:text-left font-open">
-          Find answers to common questions most of our guests inquire about.
-        </p>
+        <div className="flex flex-row justify-center align-top gap-x-2">
+          <hr className="w-60 border-gray-500 border-1 mt-4 hidden lg:flex" />
+          <p className="text-gray-300 text-lg text-center py-4 md:py-0 lg:w-96 lg:text-left font-open">
+            Find answers to common questions most of our guests inquire about.
+          </p>
+        </div>
       </div>
       <div className="flex flex-col justify-center items-center pt-12 w-full">
         {items.map((item, i) => (
@@ -39,7 +44,7 @@ export default function Faq(props) {
             <div className="w-full flex flex-row justify-between items-center">
               <button
                 // key={item.id}
-                className={`h-16 text-base w-full text-white text-left rounded-xl flex flex-row justify-between items-center ${
+                className={`h-16 text-base w-full text-white text-left rounded-xl flex flex-row justify-between items-center font-mont ${
                   selected === i ? "active" : ""
                 }`}
               >
@@ -49,9 +54,12 @@ export default function Faq(props) {
               <button className="text-white">
                 {" "}
                 {selected === i ? (
-                  <Minus className="ml-8 text-primary" size={20} />
+                  <RiQuestionnaireLine
+                    className="ml-8 text-primary"
+                    size={20}
+                  />
                 ) : (
-                  <Plus className="ml-8" size={20} />
+                  <RiQuestionnaireLine className="ml-8" size={20} />
                 )}{" "}
               </button>
             </div>

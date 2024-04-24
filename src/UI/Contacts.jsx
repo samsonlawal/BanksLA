@@ -2,6 +2,10 @@ import { Zap, Shield, Watch } from "react-feather";
 // import { Shield } from "react-feather";
 // import { Watch } from "react-feather";
 
+import { GiCheckedShield } from "react-icons/gi";
+import { MdOutlineTimer } from "react-icons/md";
+import { BsLightningChargeFill } from "react-icons/bs";
+
 export default function Contacts() {
   return (
     <div
@@ -66,28 +70,31 @@ export default function Contacts() {
       </div>
 
       {/* Text */}
-      <div className="w-full md:px-2 py-10 flex flex-col gap-y-4 lg:gap-y-2 justify-start items-start md:w-145 lg:w-1/2 lg:px-6">
-        <h1 className="text-left font-bold text-3xl md:text-4xl lg:text-5xl font-mont">
+      <div className="w-full md:px-2 py-10 flex flex-col gap-y-4 lg:gap-y-2 justify-start items-start md:w-145 lg:w-1/2 lg:px-6 font-mont">
+        <h1 className="text-left font-semibold text-3xl md:text-4xl lg:text-5xl font-mont">
           <span className="text-primary">Contactless</span> Check in
         </h1>
-        <p className="text-left lg:text-lg font-open">
+        <p className="text-left lg:text-lg font-open text-gray-500">
           No more check in hassles! Check in by yourself with your access code.
         </p>
-        <div className="w-fit flex flex-col justify-start items-start gap-y-4 md:text-lg py-6 lg:py-8 font-open">
-          <div className="flex flex-row gap-x-4">
-            <Zap className="text-primary" />
+        <div className="w-fit flex flex-col md:flex-row justify-start items-start gap-y-4 gap-x-8 md:text-lg py-6 lg:py-8 font-open">
+          <div className="flex flex-row items-center gap-x-4 h-14 px-4 shadow shadow-red-100">
+            <BsLightningChargeFill className="text-primary" size={20} />
             <p className="font-semibold">Fast Check in</p>
           </div>
-          <div className="flex flex-row gap-x-4">
-            <Shield className="text-primary" />
+          <div className="flex flex-row justify-center items-center gap-x-4 h-14 px-4 shadow shadow-red-100">
+            {/* <Shield /> */}
+            <GiCheckedShield className="text-primary scale-x-[-1]" size={20} />
+
             <p className="font-semibold"> Privacy</p>
           </div>
-          <div className="flex flex-row gap-x-4">
-            <Watch className="text-primary" />
+          <div className="flex flex-row items-center gap-x-4 h-14 px-4 shadow shadow-red-100">
+            <MdOutlineTimer className="text-primary" size={20} />
+
             <p className="font-semibold">Zero wait time</p>
           </div>
         </div>
-        <p className="text-left font-open">
+        <p className="text-left font-mont">
           Cool, contemporary and stylish — our new apartments with smart doors
           feature a sleek design that adds warmth to the surroundings. Our
           apartment check in provides you easy access to your living space.
